@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import { Text, Input, Button } from '../../components';
 import { ChildData, useAuth, useChildren } from '../../contexts';
-import { dispatch } from '../../utils';
+import { dispatch, saveChildren } from '../../utils';
 import { StackActions } from '@react-navigation/native';
 
 const ChildrenInfo = () => {
@@ -47,6 +47,7 @@ const ChildrenInfo = () => {
 
     if (isFormValid) {
       updateChildren(childrenInfo);
+      saveChildren(childrenInfo);
       setChildrenNumber('');
       setChildrenInfo([]);
       login();
