@@ -5,7 +5,7 @@ import { StoryOptions } from '../../screens/Home.screen';
 
 const openai = new OpenAI({
   baseURL: 'https://api.openai.com/v1',
-  apiKey: Config.OPENAI_API_KEY,
+  apiKey: Config.OPEN_AI_API_KEY,
 });
 const ConceptStory = 'Cuento para explicar el concepto de ';
 
