@@ -1,79 +1,60 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Documentación del Proyecto
 
-# Getting Started
+## Configuración Inicial
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Para configurar el proyecto inicialmente, sigue estos pasos:
 
-## Step 1: Start the Metro Server
+1. Asegúrate de tener instalado yarn. Si no lo tienes, puedes instalarlo con el comando `npm install -g yarn`.
+2. Clona el repositorio a tu máquina local.
+3. Navega hasta el directorio del proyecto.
+4. Agrega las siguientes variables de entorno:
+   1. `MMKV_KEY` Permite agregar una clave única para la información almacenada localmente
+   2. `OPEN_AI_API_KEY` Es el API Key de OpenAI que permite hacer las llamadas a esta herramienta
+5. Ejecuta `yarn install` para instalar todas las dependencias del proyecto.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Desarrollo
 
-To start Metro, run the following command from the _root_ of your React Native project:
+Para iniciar el servidor de desarrollo, ejecuta `yarn start`.
 
-```bash
-# using npm
-npm start
+## Pruebas
 
-# OR using Yarn
-yarn start
-```
+Para ejecutar las pruebas, usa el comando `yarn test`.
 
-## Step 2: Start your Application
+## Construcción
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+Para construir el proyecto, ejecuta `yarn build`.
 
-### For Android
+## Estructura del Proyecto
 
-```bash
-# using npm
-npm run android
+El proyecto tiene la siguiente estructura de directorios:
 
-# OR using Yarn
-yarn android
-```
+- `__tests__/`: Contiene los archivos de prueba.
+- `android/`: Contiene los archivos específicos de Android.
+- `ios/`: Contiene los archivos específicos de iOS.
+- `src/`: Contiene el código fuente del proyecto.
+- `src/components/`: Contiene los componentes más pequeños.
+- `src/contexts/`: Contiene todos los proveedores.
+- `src/navigators/`: Contiene el navegador principal.
+- `src/screens/`: Contiene solo las pantallas de la app.
+- `src/utils/`: Contiene diversas utilidades enfocadas en el almacenamiento, navegación y llamadas a la API de OpenAI.
 
-### For iOS
+### Componentes Principales
 
-```bash
-# using npm
-npm run ios
+- `App.tsx`: Este es el punto de entrada de .la aplicación.
+- `RootNavigator.tsx`: Es el "stack" principal de la aplicación, aquí puedes agregar o eliminar pantallas.
 
-# OR using Yarn
-yarn ios
-```
+## Configuración Adicional
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+Para configurar el proyecto para iOS, necesitarás abrir el archivo `ios/OnceUponATime.xcworkspace` en Xcode y seguir las instrucciones específicas de configuración de iOS.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+Para configurar el proyecto para Android, necesitarás abrir el directorio `android/` en Android Studio y seguir las instrucciones específicas de configuración de Android.
 
-## Step 3: Modifying your App
+Por favor, consulta la documentación oficial de React Native para obtener más detalles sobre la configuración de proyectos para iOS y Android.
 
-Now that you have successfully run the app, let's modify it.
+## Contribución
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+Por favor, sigue las mejores prácticas de codificación y asegúrate de que todas las pruebas pasen antes de enviar un pull request.
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+## Contacto
 
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Si tienes alguna pregunta o problema, por favor, abre un issue en GitHub o contáctame al correo electrónico [edwingarcessaucedo@gmail.com](mailto:edwingarcessaucedo@gmail.com).

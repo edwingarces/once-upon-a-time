@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import { ChildrenContext, ChildData } from '../contexts';
 import { Button, Input, Text } from '../components';
-import { getStory } from '../utils/openai';
+import { getStory } from '../utils';
 
 export enum StoryOptions {
   'SleepStory' = 'Cuento para dormir',

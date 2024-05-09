@@ -10,10 +10,6 @@ export type RootStackParamList = {
   PersonalInfo: undefined;
   ChildrenInfo: undefined;
   Home: undefined;
-  Login: undefined;
-  Register: undefined;
-  Childs: undefined;
-  Child: { id: string };
 };
 
 export const navigationRef = React.createRef() as RefObject<
